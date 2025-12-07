@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora SIS IVA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sis: {
+                green: '#4ade80', // Approximate from PDF
+                darkGreen: '#15803d',
+                yellow: '#facc15',
+                red: '#f87171',
+                header: '#e5e7eb',
+                border: '#000000',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+      
+      /* Print styles */
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+        .print-only {
+          display: block !important;
+        }
+        body {
+          background: white;
+        }
+        #root {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "jspdf": "https://aistudiocdn.com/jspdf@^3.0.4",
+    "html2canvas": "https://aistudiocdn.com/html2canvas@^1.4.1",
+    "qrcode": "https://aistudiocdn.com/qrcode@^1.5.3",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.39.3"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-100 text-gray-900 font-sans antialiased">
+    <div id="root"></div>
+  </body>
+</html>
